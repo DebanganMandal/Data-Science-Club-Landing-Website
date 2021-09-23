@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&display=swap');
+
+.primary-color{
+    color: #e97f64;
+}
+
+a{
+    text-decoration: none;
+    color: #f4f4f4;
+    padding-bottom: 0.3rem;
+}
+
+body{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem ;
+    color: #e97f64;
+    
+}
+
+nav .list{
+    display: flex;
+    list-style: none;
+}
+
+.list li{
+    padding: 0 1rem;
+    
+}
+
+.list li a:hover{
+    border-bottom: #e97f64 solid 3px;
+}
+
+nav h1{
+    color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.showcase {
+    position: relative;
+    text-align: center;
+    background: url(../img/EG2-Redman-Davenport-Serious-Data-Science-2400x1260-1-1200x630.jpg) no-repeat center center/cover;
+    color: #f4f4f4;
+    /* width: 100%; */
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.showcase h3{
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.showcase::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 16, 16, 0.7);
+}
+
+.showcase *{
+    z-index: 10;
+}
+
+/* Display section */
+#display{
+    
+    grid-gap: 1rem;
+    padding: 2rem;
+    background-color: #333;
+}
+
+#display img{
+    width: 40vw;
+}
+
+#display .items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+#display .items div{
+    padding: 1rem;
+    text-align: center;
+}
+
